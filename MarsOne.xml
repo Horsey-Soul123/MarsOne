@@ -7,14 +7,6 @@
       </block>
     </value>
     <statement name="DO0">
-      <block type="movement_stop" id="6"></block>
-    </statement>
-    <value name="IF1">
-      <block type="sensor_button" id="68">
-        <field name="OBJECT">UP</field>
-      </block>
-    </value>
-    <statement name="DO1">
       <block type="movement_setmotors" id="16" inline="true">
         <value name="BOTHMOVLEFT">
           <block type="math_number" id="80">
@@ -40,6 +32,14 @@
           </block>
         </next>
       </block>
+    </statement>
+    <value name="IF1">
+      <block type="sensor_button" id="68">
+        <field name="OBJECT">UP</field>
+      </block>
+    </value>
+    <statement name="DO1">
+      <block type="movement_stop" id="6"></block>
     </statement>
   </block>
 </xml>
